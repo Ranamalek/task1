@@ -1,0 +1,744 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contaner{
+    margin: auto;
+    width: 80%;
+}
+.heder{
+    width: 100%;
+    height: 60px;
+    background-color: #fefefe;
+    opacity: .7;
+    position: fixed;
+    z-index: 10;
+}
+.logo{
+    width: 90px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.list1{
+    list-style: none;
+    float: right;
+}
+.list1 li{
+    display: inline-block;
+    margin-top: 18px;
+    margin-left: 30px;
+    margin-right: 30px;    
+}
+.list1 li a:hover{
+    color: red;
+}
+/* //////////////////////////////////////////heder////////////////////////////////////// */
+.div1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/plan3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay1{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(208, 204, 179, 0.5);
+}
+.perent1{
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.p1{
+    color: #ffffff;
+    padding: 12px 0px;
+    letter-spacing: 2px;
+    text-transform: capitalize;    
+}
+.bt1{
+    padding: 15px 22px;
+    font-size: 17px;
+    border: 0;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+.bt2{
+    background-color: rgb(0, 0, 0);
+    color: #fbfbfb;
+    margin-left: 10px;
+}
+.bt1:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+/* /////////////////////////////////////home////////////////////////////////////// */
+.div2{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.title2{
+    text-align: center;
+    padding-top: 150px;
+    font-size: 38px;
+    text-transform: capitalize;
+}
+.line{
+    width: 50px;
+    height: 4px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 17px;
+}
+.contaner{
+    margin: auto;
+    width: 80%;
+}
+.perent2{
+    overflow: auto;
+}
+.item1{
+    width: 30%;
+    float: left;
+    border: 2px solid black;
+    padding: 30px 40px;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+}
+.rr{
+    margin: 9.5% 5%;
+}
+.icon1{
+    font-size: 30px;
+    color: rgb(12, 119, 207);
+    margin-top: -6px;
+    margin-bottom: 6px;
+}
+.info2{
+    font-size: 22px;
+    color: rgb(203, 133, 49);
+    text-transform: capitalize;
+}
+.p2{
+    font-size: 15px;
+    color: #051149;
+    padding: 7px 10px;
+    text-transform: capitalize;
+}
+.p3{
+    font-size: 15px;
+    padding: 12px 0px;
+}
+.more{
+    font-size: 21px;
+    color: rgb(12, 119, 207);
+}
+.item1::after{
+    position: absolute;
+    z-index: -1;
+    content:"";
+
+    width: 0%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0;
+}
+.item1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transition: 1s;
+}
+/* /////////////////////////////////////page2///////////////////////////////////// */
+.div3{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.perent3{
+ overflow: auto;    
+}
+.cuntry{
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 18px 14px;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.page3-img{
+    margin: auto;
+    width: 85%;
+    position: relative;
+}
+.page3-img img{
+    width: 100%;
+}
+.page3-overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+}
+.cuntry:hover .page3-overlay{
+    visibility: visible;
+    transition: 1s;
+}
+.page3-overlay a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: aliceblue;
+    background-color: rgb(90, 90, 232);
+    margin: auto;
+}
+.page3-overlay a i{
+    line-height: 40px;
+}
+.blad1{
+    padding-top: 70px;
+    font-size: 17px;
+    color: rgb(59, 116, 208);
+}
+.blad{
+    font-size: 17px;
+    color: #ffffff;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+/* ///////////////////////////////////////////page3//////////////////////////////////// */
+.div4{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.page4-perent{
+    overflow: auto;
+}
+.page4-item{
+    width: 30%;
+    height: 200px;
+    border: 1px solid gray;
+    float: left;
+    margin-top: 40px;
+    padding: 30px 40px;
+    margin-left: 35px;
+    position: relative;
+}
+.r4{
+    margin-bottom: 40px;
+}
+.page4-icon{
+    float: left;
+    color: rgb(12, 119, 207);
+    font-size: 30px;
+}
+.page4-title{
+    float: left;
+    margin-left: 20px;
+}
+.page4-p{
+    display: inline-block;
+    margin-top: 25px;
+    color: rgb(70, 68, 68);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.page4-item::after{
+    position: absolute;
+    z-index: -1;
+    content:"";
+
+    width: 0%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0;
+}
+.page4-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transition: .5s;   
+}
+.page4-item:hover .page4-title{
+    color: #fbfbfb;
+}
+.page4-item:hover .page4-p{
+    color: #fbfbfb;
+}
+
+/* ////////////////////////////////page4////////////////////////////////////// */
+
+  .div5{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.page5-title{
+    margin-top: 120px;
+    font-size: 38px;
+}
+.page5-line{
+    width: 60px;
+    height: 3px;
+    background-color: blue;
+    margin-top: 10px;   
+}
+.page5-item{
+    width: 40%;
+    float: left;
+}
+.page5-item2{
+    width: 40%;
+    float: left;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.page5-img{
+    margin-left: 30px;
+}
+.page5-p{
+    margin-top: 40px;
+    font-size: 15px;
+    word-spacing: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(72, 71, 71);
+}
+.page5-i{
+    float: left;
+    margin-top: 17px;
+    margin-right: 5px;
+    font-size: 18px;
+    color: rgb(101, 101, 238);
+}
+.page5-p2{
+    padding-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ul5{
+    font-size: 28px;
+    margin: -50px;
+    text-align: center;
+}
+.ul5 li{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #7c7979;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-left: 11px;
+    text-align: center;
+}
+.ul5 li:hover{
+    background-color: #1337d4;
+}
+.page-li5{
+    background-color: #1337d4;
+}
+
+/* ////////////////////////////////////////page5/////////////////////////////////////////// */
+
+.div6{
+    background-image: url(../img/airplan10.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 50%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.page6-contaner{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.page6-perent{
+    overflow: auto;
+}
+.page6-item{
+    float: left;
+    text-align: center;
+    margin: 100px 80px;
+}
+.page6-i{
+    font-size: 35px;
+    padding-bottom: 12px;
+    color: #1337d4;
+}
+.page6-title{
+    padding-bottom: 5px;
+}
+
+/* //////////////////////////////////page6////////////////////////////////// */
+
+.div7{
+    width: 100vw;
+    height: 100vh;
+}
+.page7-item{
+    float: left;
+    width: 30%;
+    border: 1px solid rgb(132, 125, 125);
+    padding: 30px 40px;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 40px;
+}
+.page7-title{
+    margin-top: -20px;
+}
+.p77{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.h57{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #7c7979;
+}
+.page7-c{
+    border: 1px solid rgb(31, 69, 236);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.page7-p2 .page7-p2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.page7-p{
+    font-size: 40px;
+}
+.page7-p1{
+    font-size: 20px;
+}
+.page7-p2{
+    margin: 15px;
+    color: #7c7979;
+}
+.page7-p3{
+    border: 1px solid blue;
+    width: 120px;
+    height: 30px;
+    padding-top: 4px;
+    margin: auto;
+    margin-top: 20px;
+}
+.page7-item:hover .h57{
+    color: red;
+}
+.page7-item:hover .page7-c{
+    color: red;
+}
+.page7-item::after{
+    position: absolute;
+    content:"";
+    z-index: -1;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0;
+    transition: .5s;
+}
+.page7-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+
+/* //////////////////////////////////////page7//////////////////////////////////// */
+
+.div8{
+    background-image: url(../img/hotel2022.jpg);
+    background-size: cover;
+    margin-top: 40px;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 50%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.page8-contaner{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+.page8-perent{
+    overflow: auto;
+}
+.page8-item{
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+}
+.page8-item1{
+    margin-left: 5%;
+}
+.page8-img1{
+    width: 70px;
+    height: 70px;
+    border-radius:50px ;
+}
+.page8-title{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+.page8-img{
+    float: left;
+}
+.page8-title1{
+    display: inline-block;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: #fbfbfb;
+}
+.page8-p{
+    color: #1337d4;
+}
+
+/* /////////////////////////////////////page8//////////////////////////////////// */
+
+.div9{
+    width: 100vw;
+    height: 100vh;
+}
+.page9-perent{
+    overflow: auto;
+    padding-top: 50px;
+}
+.page9-item{
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 18px 14px;
+    position: relative;
+    background-color: #cfc6a4;
+}
+.page9-item2{
+    margin: 0% 5%;
+}
+.page9-img{
+    margin: auto;
+    width: 85%;
+    position: relative; 
+}
+.page9-img img{
+    width: 100%;
+}
+.page9-overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+}
+.page9-item:hover .page9-overlay {
+    visibility: visible;  
+}
+.page9-overlay a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: aliceblue;
+    background-color: rgb(90, 90, 232);
+    margin-left: auto;
+}
+.page9-overlay a i{
+    line-height: 40px;
+}
+.page9-info-title{
+    color: black;
+    padding: 11px 0px;
+    text-transform: capitalize;
+}
+.page9-info-p{
+    color: gray;
+    text-transform: uppercase;
+    font-size: 14px;   
+}
+.page9-item:hover  .page9-info-title{
+    color: rgb(149, 119, 48);
+}
+
+.page9-item:hover  .page9-info-p{
+    color: blue;
+}
+
+.page9-item:after{
+    position: absolute;
+    content:"";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0;
+}
+.page9-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transition: 1s;
+}    
+
+/* ///////////////////////////////////////////page9////////////////////////////////// */
+
+.div10{
+    width: 100vw;
+    height: 100vh;
+}
+.page10-perent{
+    overflow: auto;
+}
+.page10-item{
+    width: 30%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    float: left;
+    position: relative;
+}
+.page10-title{
+    float: left;
+
+}
+.page10-p1{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.page10-i{
+    color: #1337d4;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.page10-h2{
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.page10-p2{
+    padding-top: 20px;
+    font-size: 15px;
+    color: #7c7979;
+    padding-bottom: 20px;
+}
+.page10-a{
+    color: #1337d4;
+    padding-top: 50px;
+}
+.page10-item2{
+   margin-left: 5%;
+   margin-right: 5%;   
+}
+.page10-item::after{
+    position: absolute;
+    content:"";
+    z-index: -1;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(126, 156, 209);
+    opacity: 0;
+    transition: .5s;
+}
+.page10-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+.page10-img{
+    margin-left: 20px;
+}
+
+/* /////////////////////////////////page10////////////////////////////////// */
+
+.div11{
+    width: 100vw;
+    height: 50%;
+    background-color: #918f8f;
+    margin-top: 140px;
+}
+.page11-contaner{
+    width: 40%;
+    margin: auto;
+}
+.pag11-perent{
+    overflow: auto;
+}
+.page11-item{
+    margin: auto;
+    padding-top: 55px;
+    margin-left: 90px;
+}
+.page11-img{
+    margin-left: 45px;
+    padding-bottom: 10px ;
+}
+.page11-i i{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    background-color: #1337d4;
+    padding-top: 12px;
+    padding-left: 11px;
+    font-size: 22px;
+}
+.page11-p{
+    margin-top: 8px;
+    padding-right: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
